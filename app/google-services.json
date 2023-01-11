@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "265444305441",
+    "firebase_url": "https://kamaii-rider.firebaseio.com",
+    "project_id": "kamaii-rider",
+    "storage_bucket": "kamaii-rider.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:265444305441:android:6a4f4fe0d43766893ed160",
+        "android_client_info": {
+          "package_name": "com.kamaii.rider"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "265444305441-s5j6tl7kn2cp81cp1vtq0o749ghbdu41.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6cLCyTSt8lsK9a5bFPu6sZ166hLEtTHw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "265444305441-s5j6tl7kn2cp81cp1vtq0o749ghbdu41.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

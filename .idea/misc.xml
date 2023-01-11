@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/drawable/blue_border_bg.xml" value="0.1305" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/drawable/button_pressed_2.xml" value="0.1075" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/drawable/button_selectorgreen.xml" value="0.1075" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/drawable/buttongradientgreen.xml" value="0.1075" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/drawable/buttonroundgblue.xml" value="0.1305" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/drawable/cooking_bg.xml" value="0.165234375" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/drawable/curved_top_5dp_bg.xml" value="0.16332046332046332" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/drawable/custom_button_white_curved.xml" value="0.165234375" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/drawable/custom_curved_background.xml" value="0.165234375" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/drawable/dark_blue_btn_bg.xml" value="0.147265625" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/drawable/dashed_view_line.xml" value="0.1" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/drawable/disabled_border.xml" value="0.1315" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/drawable/front_second_bg.xml" value="0.153515625" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/drawable/gray_border_bg.xml" value="0.141" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/drawable/green_border_bg.xml" value="0.16332046332046332" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/drawable/ic_arrow2.xml" value="0.122" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/drawable/ic_clock1234.xml" value="0.16332046332046332" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/drawable/ic_drawer_earning.xml" value="0.122" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/drawable/ic_grey_arrow_circle.xml" value="0.122" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/drawable/ic_info_green.xml" value="0.16332046332046332" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/drawable/ic_my_orders.xml" value="0.122" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/drawable/ic_order_summery.xml" value="0.122" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/drawable/ic_payment_order_details_green.xml" value="0.1305" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/drawable/ic_time.xml" value="0.1425" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/drawable/ic_upload.xml" value="0.165234375" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/drawable/payment_btn_blue.xml" value="0.1485" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/drawable/payment_btn_dialog.xml" value="0.1485" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/drawable/pink_drawable.xml" value="0.147265625" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/drawable/red_border_bg.xml" value="0.122" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/drawable/rider_request_bg.xml" value="0.122" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/drawable/rider_request_bg2.xml" value="0.1315" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/drawable/todays_km_bg.xml" value="0.12421875" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/drawable/upload_img_btn.xml" value="0.159" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/drawable/verticle_dashed_line.xml" value="0.141" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/drawable/visitor_drawable_forth.xml" value="0.153515625" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/actionbar_header_nav.xml" value="0.153125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/activity_add_money.xml" value="0.153125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/activity_address_bottom_dialog.xml" value="0.1451388888888889" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/activity_app_intro2.xml" value="0.153125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/activity_bank_document.xml" value="0.153125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/activity_base.xml" value="0.153125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/activity_basic_info.xml" value="0.15" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/activity_birthday_card.xml" value="0.153125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/activity_business_card.xml" value="0.17651146629603892" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/activity_business_document.xml" value="0.153125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/activity_check_sign_in.xml" value="0.14140625" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/activity_contact_list.xml" value="0.153125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/activity_crop.xml" value="0.153125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/activity_crop_image.xml" value="0.153125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/activity_customer_view_service.xml" value="0.153125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/activity_document_upload_two.xml" value="0.153125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/activity_edit_persnoal_info.xml" value="0.153125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/activity_filechooser.xml" value="0.153125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/activity_location_permission.xml" value="0.22" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/activity_main.xml" value="0.153125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/activity_one_two_one_chat.xml" value="0.153125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/activity_otp.xml" value="0.1375" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/activity_personal_documentation.xml" value="0.153125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/activity_privacy.xml" value="0.153125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/activity_profile_setting.xml" value="0.153125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/activity_select_language.xml" value="0.153125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/activity_sign_in.xml" value="0.153125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/activity_sign_up.xml" value="0.14140625" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/activity_splash.xml" value="0.153125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/adapter_all_bookings.xml" value="0.153125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/adapter_cab_bookings.xml" value="0.16" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/adapter_cart.xml" value="0.2" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/adapter_customer_bookings.xml" value="0.153125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/adapter_new_cab_booking_layout.xml" value="0.153125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/adapter_services.xml" value="0.14" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/adapter_services_dialog.xml" value="0.153125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/app_bar_main.xml" value="0.153125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/cart_new_booking_layout.xml" value="0.153125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/change_dialog.xml" value="0.153125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/custom_dialog_forgot.xml" value="0.153125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/dailog_approve.xml" value="0.153125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/dailog_camera.xml" value="0.153125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/dailog_camera_gallery.xml" value="0.153125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/dailog_cashout.xml" value="0.153125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/dailog_cashout_change.xml" value="0.153125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/dailog_editservice.xml" value="0.153125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/dailog_finish.xml" value="0.16" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/dailog_payment_option.xml" value="0.153125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/dailog_rating.xml" value="0.153125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/dailog_update.xml" value="0.14305555555555555" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/dialog_layout_rate.xml" value="0.153125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/dialog_offline_confirm.xml" value="0.153125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/fragment_add_packaging.xml" value="0.153125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/fragment_all_jobs.xml" value="0.153125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/fragment_appointment.xml" value="0.14375" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/fragment_blank.xml" value="0.142578125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/fragment_cab_bookings.xml" value="0.153125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/fragment_check_internet.xml" value="0.153125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/fragment_home_screen.xml" value="0.153125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/fragment_incentive.xml" value="0.1390625" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/fragment_jobs.xml" value="0.153125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/fragment_mainservice.xml" value="0.153125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/fragment_maproute.xml" value="0.142578125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/fragment_my_earning.xml" value="0.153125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/fragment_my_orders.xml" value="0.153125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/fragment_new_bookings.xml" value="0.153125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/fragment_order_details.xml" value="0.153125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/fragment_partner_leave.xml" value="0.14" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/fragment_payment.xml" value="0.153125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/fragment_promotion.xml" value="0.153125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/fragment_route_track.xml" value="0.153125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/fragment_services.xml" value="0.153125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/fragment_stored_images.xml" value="0.14140625" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/fragment_wallet.xml" value="0.153125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/item_section.xml" value="0.153125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/nav_header_main.xml" value="0.153125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/offline_dialog_recycler_layout.xml" value="0.1451388888888889" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/order_details_new_rv_layout.xml" value="0.153125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/order_details_parent_recycler_layout.xml" value="0.153125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/payment_dialog_1000.xml" value="0.153125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/payment_dialog_500.xml" value="0.153125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/payment_handover_dialog.xml" value="0.153125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/stored_images_rv_layout.xml" value="0.22" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/tearms_condition_dialog_layout.xml" value="0.153125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/layout/track_time_recycler_layout.xml" value="0.67" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/menu/activity_main_drawer.xml" value="0.153125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/menu/menu_cards.xml" value="0.153125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/menu/menu_main.xml" value="0.153125" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.136" />
+        <entry key="..\:/raj/Kamaii Rider Test/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.136" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

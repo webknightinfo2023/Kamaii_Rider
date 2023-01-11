@@ -1,0 +1,3 @@
+include ':AGIKSwipeButton'
+include ':app',':escposprinter',':androidcountdown'
+rootProject.name = "Kamaii Partner"

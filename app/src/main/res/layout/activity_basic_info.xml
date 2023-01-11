@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F4"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/action_bar_menus"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/llBack"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back"
+                android:id="@+id/back"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:tint="#173143" />
+
+        </LinearLayout>
+
+        <com.kamaii.rider.utils.CustomTextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/basic_information"
+            android:textColor="#173143"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/sub_relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:backgroundTint="#F2F2F4">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_10"
+                    app:cardBackgroundColor="#F2F2F4"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="35dp"
+                        android:background="@drawable/circuler_relative_background"
+                        android:backgroundTint="@color/white">
+
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/add_profile_pic"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/profile_image"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="3dp"
+                    app:civ_fill_color="@color/gray" />
+
+                <com.kamaii.rider.utils.CustomTextViewBold
+                    android:id="@+id/artist_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/add_profile_pic"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:text="Hello, Roy Thompson"
+                    android:textSize="14dp" />
+
+                <com.kamaii.rider.utils.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/artist_name"
+                    android:layout_marginLeft="@dimen/pad_20"
+                    android:layout_marginTop="5dp"
+                    android:text="You are few step away from completing your profile"
+                    android:textSize="12dp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_alignBottom="@+id/add_profile_pic"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="-10dp"
+                    android:layout_marginRight="27dp"
+                    android:background="@drawable/curved_relative_border"
+                    android:paddingLeft="@dimen/pad_15"
+                    android:paddingTop="@dimen/dimen_5dp"
+                    android:paddingRight="@dimen/pad_15"
+                    android:paddingBottom="@dimen/dimen_5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Get Help"
+                        android:textSize="@dimen/dp_16" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_10"
+                app:cardCornerRadius="10dp"
+                android:layout_below="@+id/sub_relative"
+                app:cardElevation="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_10">
+
+
+                    <com.kamaii.rider.utils.InputFieldView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:visibility="gone">
+
+                        <com.kamaii.rider.utils.CustomEditText
+                            android:id="@+id/etCategoryD"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableRight="@drawable/ic_drop_down"
+                            android:editable="false"
+                            android:hint="@string/select_your_speciality"
+                            android:singleLine="true"
+                            android:text=""
+                            android:visibility="gone" />
+
+                    </com.kamaii.rider.utils.InputFieldView>
+
+                    <com.kamaii.rider.utils.InputOpenFieldView
+                        android:id="@+id/one"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/hintcolor"
+                        android:layout_marginTop="5dp"
+                        android:visibility="gone">
+
+                        <com.kamaii.rider.utils.CustomEditText
+                            android:id="@+id/etNameD"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/business_name"
+                            android:inputType="textCapWords"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textSize="16dp" />
+
+                    </com.kamaii.rider.utils.InputOpenFieldView>
+
+
+                    <com.kamaii.rider.utils.InputOpenFieldView
+                        android:id="@+id/two"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/one"
+                        android:textColorHint="@color/hintcolor"
+
+                        android:layout_marginTop="5dp">
+
+                        <com.kamaii.rider.utils.CustomEditText
+                            android:id="@+id/etCityD"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/your_city"
+                            android:inputType="textCapWords"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textSize="16dp" />
+
+                    </com.kamaii.rider.utils.InputOpenFieldView>
+
+
+                    <com.kamaii.rider.utils.InputFieldView
+                        android:id="@+id/three"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/two"
+                        android:layout_marginTop="5dp"
+                        android:textColorHint="@color/hintcolor">
+
+                        <com.kamaii.rider.utils.CustomEditText
+                            android:id="@+id/etLocationD"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:focusable="false"
+                            android:gravity="start"
+                            android:hint="@string/your_location"
+                            android:text="Vadodara"
+                            android:textSize="16dp" />
+
+                    </com.kamaii.rider.utils.InputFieldView>
+
+
+
+
+
+
+
+
+
+
+
+
+                    <com.kamaii.rider.utils.InputOpenFieldView
+                        android:id="@+id/four"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/three"
+                        android:textColorHint="@color/hintcolor"
+                        android:layout_marginTop="5dp"
+                        android:visibility="gone">
+
+                        <com.kamaii.rider.utils.CustomEditText
+                            android:id="@+id/etAboutD"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="top"
+                            android:hint="@string/write_description"
+                            android:maxLength="200"
+                            android:text=""
+                            android:textSize="16dp" />
+
+                    </com.kamaii.rider.utils.InputOpenFieldView>
+
+                    <com.kamaii.rider.utils.InputOpenFieldView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/four"
+                        android:textColorHint="@color/hintcolor"
+                        android:layout_marginTop="5dp">
+
+                        <com.kamaii.rider.utils.CustomEditText
+                            android:id="@+id/etrefernamenumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Enter Reference Name and Number"
+                            android:inputType="text"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textSize="16dp" />
+                    </com.kamaii.rider.utils.InputOpenFieldView>
+
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <com.kamaii.rider.utils.CustomButton
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card1"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_marginRight="@dimen/margin_10"
+                android:background="@drawable/basicinfo_layout_submit_btn"
+                android:gravity="center"
+                android:text="@string/submit"
+                android:textColor="@color/white" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

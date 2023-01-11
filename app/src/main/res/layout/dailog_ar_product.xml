@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:card_view="http://schemas.android.com/apk/res-auto">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dialog_back_blue">
+
+            <com.kamaii.rider.utils.CustomTextViewBold
+                android:id="@+id/ctvbTitle"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/add_product"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+
+
+
+            <com.kamaii.rider.utils.CustomTextViewBold
+                android:id="@+id/tvcat"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:drawableRight="@drawable/ic_drop_down"
+                android:gravity="center_vertical"
+                android:text="@string/all_categories"
+                android:textSize="16sp" />
+
+
+        <com.kamaii.rider.utils.CustomTextViewBold
+            android:visibility="gone"
+            android:id="@+id/tvFiltersub"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:drawableRight="@drawable/ic_drop_down"
+            android:gravity="center_vertical"
+            android:text="@string/all_sub_categories"
+            android:textSize="16sp" />
+
+        <com.kamaii.rider.utils.CustomTextViewBold
+            android:visibility="gone"
+        android:id="@+id/tvhird"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:drawableRight="@drawable/ic_drop_down"
+        android:gravity="center_vertical"
+        android:text="@string/all_sub__level_categories"
+        android:textSize="16sp" />
+
+
+        <com.kamaii.rider.utils.CustomTextViewBold
+            android:visibility="gone"
+            android:id="@+id/tvservice"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:drawableRight="@drawable/ic_drop_down"
+            android:gravity="center_vertical"
+            android:text="@string/all_service_name"
+            android:textSize="16sp" />
+
+        <com.kamaii.rider.utils.InputOpenFieldView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <com.kamaii.rider.utils.CustomEditText
+                android:visibility="gone"
+                android:textAllCaps="true"
+                android:id="@+id/etvechial_number"
+                android:layout_width="match_parent"
+                android:textColorHint="@color/light_gray"
+                android:layout_height="wrap_content"
+                android:hint="Partner Number"
+                android:inputType="textCapCharacters"
+                android:text="" />
+
+        </com.kamaii.rider.utils.InputOpenFieldView>
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+
+
+            <com.kamaii.rider.utils.InputOpenFieldView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <com.kamaii.rider.utils.CustomEditText
+                    android:id="@+id/etProNameD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/light_gray"
+                    android:hint="@string/product_name"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:text="" />
+
+            </com.kamaii.rider.utils.InputOpenFieldView>
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <com.kamaii.rider.utils.CustomEditText
+                    android:id="@+id/etRateProD"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/my_rate"
+                    android:layout_weight="0.6"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:text="" />
+                <com.kamaii.rider.utils.CustomTextView
+                    android:id="@+id/tvrate"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.4"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/light_gray"
+                    android:drawableRight="@drawable/ic_drop_down"
+                    android:gravity="center_horizontal"
+                    android:text="Select Rate"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+
+
+
+            <com.kamaii.rider.utils.InputFieldView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <com.kamaii.rider.utils.CustomEditText
+                    android:id="@+id/etImageD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/ic_add"
+                    android:textColorHint="@color/light_gray"
+                    android:editable="false"
+                    android:hint="@string/select_image"
+                    android:singleLine="true"
+                    android:text="" />
+
+            </com.kamaii.rider.utils.InputFieldView>
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioGroup
+
+                android:orientation="horizontal"
+                android:id="@+id/radiogroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:id="@+id/radiosquantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quantity"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:id="@+id/radioydays"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Days"/>
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/manual_service_relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/manual_service_img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@color/black"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:id="@+id/manual_photo_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="edit image"
+                android:layout_below="@+id/manual_service_img"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"
+                android:layout_below="@+id/manual_photo_btn"
+                android:paddingLeft="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/manual_price_etx"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/manual_photo_btn"
+                    android:textSize="16dp"
+                    android:hint="Price"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <com.kamaii.rider.utils.CustomTextViewBold
+
+                android:id="@+id/tvNoPro"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="@string/cancel1"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+            <com.kamaii.rider.utils.CustomTextViewBold
+                android:layout_marginLeft="5dp"
+                android:id="@+id/tvYesPro"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:background="@drawable/dialog_btn_blue"
+                android:text="@string/save"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
+</layout>

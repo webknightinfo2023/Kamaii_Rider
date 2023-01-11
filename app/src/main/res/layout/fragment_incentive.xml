@@ -1,0 +1,911 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ui.fragment.NewBookings">
+
+
+        <ScrollView
+            android:id="@+id/scrollview_homescreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/lay"
+            android:focusable="true"
+            android:focusedByDefault="true"
+            android:nestedScrollingEnabled="true"
+            android:overScrollMode="never"
+            android:screenReaderFocusable="true"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/first_re"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible">
+
+
+                    <LinearLayout
+                        android:id="@+id/todays_status_linear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="@dimen/margin_10"
+                        android:paddingRight="@dimen/margin_10"
+                        android:paddingBottom="@dimen/margin_10"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:id="@+id/c_linear_one"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/visitor_drawable_third">
+
+                            <ImageView
+                                android:id="@+id/image_doc_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/margin_10"
+                                android:src="@drawable/ic_total_payment" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dp"
+                                android:orientation="vertical">
+
+                                <com.kamaii.rider.utils.CustomTextViewBold
+                                    android:id="@+id/total_earning_digit"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="@dimen/dimen_5dp"
+                                    android:layout_toRightOf="@+id/image_doc"
+                                    android:paddingTop="7dp"
+                                    android:text=""
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text_size_16" />
+
+                                <com.kamaii.rider.utils.CustomTextView
+                                    android:id="@+id/total_earning_txt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="@dimen/dimen_5dp"
+                                    android:layout_toRightOf="@+id/image_doc"
+                                    android:paddingBottom="10dp"
+                                    android:text="@string/total_earning"
+                                    android:textColor="@color/white"
+                                    android:textSize="14dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linear_two"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/incentive_drawale"
+                            android:gravity="end"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="7dp"
+                                android:orientation="vertical">
+
+                                <com.kamaii.rider.utils.CustomTextViewBold
+                                    android:id="@+id/todays_incentive_dig"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_gravity="end"
+                                    android:layout_marginLeft="@dimen/dimen_5dp"
+                                    android:gravity="end"
+                                    android:paddingTop="7dp"
+                                    android:text=""
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text_size_16" />
+
+                                <com.kamaii.rider.utils.CustomTextView
+                                    android:id="@+id/todays_incentive_txt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end"
+                                    android:layout_marginLeft="@dimen/dimen_5dp"
+                                    android:gravity="end"
+                                    android:paddingBottom="10dp"
+                                    android:text="@string/today_incentive"
+                                    android:textColor="@color/white"
+                                    android:textSize="14dp" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/rupee_symbol_front1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|end"
+                                android:layout_marginRight="10dp"
+                                android:src="@drawable/ic_total_payment" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/todays_status_linear2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/todays_status_linear"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="@dimen/margin_10"
+                        android:paddingRight="@dimen/margin_10"
+                        android:paddingBottom="@dimen/margin_10"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:id="@+id/b_linear_one_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/front_one_bg">
+
+                            <ImageView
+                                android:id="@+id/image_doc1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/margin_10"
+                                android:src="@drawable/ic_total_bookings" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dp"
+                                android:orientation="vertical">
+
+                                <com.kamaii.rider.utils.CustomTextViewBold
+                                    android:id="@+id/total_booking"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="@dimen/dimen_5dp"
+                                    android:layout_toRightOf="@+id/image_doc"
+                                    android:paddingTop="7dp"
+                                    android:text=""
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text_size_16" />
+
+                                <com.kamaii.rider.utils.CustomTextView
+                                    android:id="@+id/total_booking_head"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="@dimen/dimen_5dp"
+                                    android:layout_toRightOf="@+id/image_doc"
+                                    android:paddingBottom="10dp"
+                                    android:text="@string/today_booking"
+                                    android:textColor="@color/white"
+                                    android:textSize="14dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/b_linear_two"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/front_second_bg"
+                            android:gravity="end"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="7dp"
+                                android:orientation="vertical">
+
+                                <com.kamaii.rider.utils.CustomTextViewBold
+                                    android:id="@+id/todays_earn"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_gravity="end"
+                                    android:layout_marginLeft="@dimen/dimen_5dp"
+                                    android:gravity="end"
+                                    android:paddingTop="7dp"
+                                    android:text=""
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text_size_16" />
+
+                                <com.kamaii.rider.utils.CustomTextView
+                                    android:id="@+id/total_earning_head"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end"
+                                    android:layout_marginLeft="@dimen/dimen_5dp"
+                                    android:gravity="end"
+                                    android:paddingBottom="10dp"
+                                    android:text="@string/today_earning"
+                                    android:textColor="@color/white"
+                                    android:textSize="14dp" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/rupee_symbol_front123"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|end"
+                                android:layout_marginRight="10dp"
+                                android:src="@drawable/ic_total_payment" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/todays_status_linear3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/todays_status_linear2"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="@dimen/margin_10"
+                        android:paddingRight="@dimen/margin_10"
+                        android:paddingBottom="@dimen/margin_10"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:id="@+id/b_linear_one"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/visitor_drawable_forth">
+
+                            <ImageView
+                                android:id="@+id/image_doc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/margin_10"
+                                android:src="@drawable/ic_total_payment" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dp"
+                                android:orientation="vertical">
+
+                                <com.kamaii.rider.utils.CustomTextViewBold
+                                    android:id="@+id/online_pyment_dig"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="@dimen/dimen_5dp"
+                                    android:layout_toRightOf="@+id/image_doc"
+                                    android:paddingTop="7dp"
+                                    android:text=""
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text_size_16" />
+
+                                <com.kamaii.rider.utils.CustomTextView
+                                    android:id="@+id/online_payment_txt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="@dimen/dimen_5dp"
+                                    android:layout_toRightOf="@+id/image_doc"
+                                    android:paddingBottom="10dp"
+                                    android:text="@string/online_payment"
+                                    android:textColor="@color/white"
+                                    android:textSize="14dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/b_linear_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/visitor_drawable_two"
+                            android:gravity="end"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="7dp"
+                                android:orientation="vertical">
+
+                                <com.kamaii.rider.utils.CustomTextViewBold
+                                    android:id="@+id/cash_payment_dig"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_gravity="end"
+                                    android:layout_marginLeft="@dimen/dimen_5dp"
+                                    android:gravity="end"
+                                    android:paddingTop="7dp"
+                                    android:text=""
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text_size_16" />
+
+                                <com.kamaii.rider.utils.CustomTextView
+                                    android:id="@+id/cash_payment_txt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end"
+                                    android:layout_marginLeft="@dimen/dimen_5dp"
+                                    android:gravity="end"
+                                    android:paddingBottom="10dp"
+                                    android:text="@string/cash_payment"
+                                    android:textColor="@color/white"
+                                    android:textSize="14dp" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/rupee_symbol_front"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|end"
+                                android:layout_marginRight="10dp"
+                                android:src="@drawable/ic_total_payment" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/todays_order_cancel_linear4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/todays_status_linear3"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="@dimen/margin_10"
+                        android:paddingRight="@dimen/margin_10"
+                        android:paddingBottom="@dimen/margin_10"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:id="@+id/o_linear_one_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/total_cancel_order_bg">
+
+                            <ImageView
+                                android:id="@+id/image_doc100"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/margin_10"
+                                android:src="@drawable/ic_iconfinder_receipt_cancel_7340547" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dp"
+                                android:orientation="vertical">
+
+                                <com.kamaii.rider.utils.CustomTextViewBold
+                                    android:id="@+id/total_cancel_booking"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="@dimen/dimen_5dp"
+                                    android:layout_toRightOf="@+id/image_doc"
+                                    android:paddingTop="7dp"
+                                    android:text=""
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text_size_16" />
+
+                                <com.kamaii.rider.utils.CustomTextView
+                                    android:id="@+id/total_cancel_booking_head"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="@dimen/dimen_5dp"
+                                    android:layout_toRightOf="@+id/image_doc"
+                                    android:paddingBottom="10dp"
+                                    android:text="@string/incentive_orders_cances"
+                                    android:textColor="@color/white"
+                                    android:textSize="14dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/o_linear_two"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/todays_km_bg"
+                            android:gravity="end"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="7dp"
+                                android:orientation="vertical">
+
+                                <com.kamaii.rider.utils.CustomTextViewBold
+                                    android:id="@+id/todays_km"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_gravity="end"
+                                    android:layout_marginLeft="@dimen/dimen_5dp"
+                                    android:gravity="end"
+                                    android:paddingTop="7dp"
+                                    android:text=""
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text_size_16" />
+
+                                <com.kamaii.rider.utils.CustomTextView
+                                    android:id="@+id/total_km_head"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end"
+                                    android:layout_marginLeft="@dimen/dimen_5dp"
+                                    android:gravity="end"
+                                    android:paddingBottom="10dp"
+                                    android:text="@string/incentive_todays_km"
+                                    android:textColor="@color/white"
+                                    android:textSize="14dp" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/km_front123"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|end"
+                                android:layout_marginRight="10dp"
+                                android:src="@drawable/ic_iconfinder_keep_distance_protective_social_physical_people_human0_6172934" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/seventh_linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/margin_10"
+                    android:paddingTop="@dimen/margin_10"
+                    android:paddingRight="@dimen/margin_10"
+                    android:paddingBottom="@dimen/margin_10">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_button_white_curved"
+                        android:backgroundTint="@color/black">
+
+                        <RelativeLayout
+                            android:id="@+id/incentive_rel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="0.5dp"
+                            android:background="@drawable/custom_button_white_curved"
+                            android:paddingTop="@dimen/margin_10">
+
+                            <com.kamaii.rider.utils.CustomTextViewBold
+                                android:id="@+id/total_hrs_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:text="Login HRS Today's"
+                                android:textAlignment="center"
+                                android:textColor="@color/dark_blue_color"
+                                android:textSize="@dimen/dp_14" />
+
+
+                            <com.kamaii.rider.utils.CustomTextViewBold
+                                android:id="@+id/total_hrs_digit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/total_hrs_txt"
+                                android:layout_centerHorizontal="true"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="@dimen/dimen_5dp"
+                                android:text="2:30:20"
+                                android:textAlignment="center"
+                                android:textColor="@color/green"
+                                android:textSize="@dimen/text_16" />
+
+
+                            <com.kamaii.rider.utils.CustomTextViewBold
+                                android:id="@+id/time_am"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/total_hrs_digit"
+                                android:paddingLeft="@dimen/margin_10"
+                                android:text="9:00 AM"
+                                android:textColor="@color/dark_blue_color"
+                                android:textSize="@dimen/dp_14" />
+
+                            <com.kamaii.rider.utils.CustomTextViewBold
+                                android:id="@+id/time_pm"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/total_hrs_digit"
+                                android:layout_alignParentRight="true"
+                                android:paddingRight="@dimen/margin_10"
+                                android:text="9:00 PM"
+                                android:textColor="@color/dark_blue_color"
+                                android:textSize="@dimen/dp_14" />
+
+                            <ProgressBar
+                                android:id="@+id/hrs_progressbar"
+                                style="@android:style/Widget.ProgressBar.Horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:layout_below="@+id/time_am"
+                                android:layout_marginTop="@dimen/dimen_5dp"
+                                android:paddingLeft="@dimen/margin_10"
+                                android:paddingRight="@dimen/margin_10"
+                                android:progressBackgroundTint="@color/gray"
+                                android:progressTint="@color/green" />
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/hrs_progressbar"
+                                android:layout_centerHorizontal="true"
+                                android:orientation="horizontal"
+                                android:paddingLeft="@dimen/margin_10"
+                                android:paddingTop="@dimen/dimen_5dp"
+                                android:paddingRight="@dimen/margin_10">
+
+                                <com.kamaii.rider.utils.CustomTextViewBold
+                                    android:id="@+id/achived_target_amount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/dark_blue_color"
+                                    android:textSize="@dimen/dp_14" />
+
+                                <com.kamaii.rider.utils.CustomTextViewBold
+                                    android:id="@+id/total_eligible_amt_"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/hrs_progressbar"
+                                    android:layout_centerHorizontal="true"
+                                    android:paddingTop="@dimen/dimen_5dp"
+                                    android:paddingRight="@dimen/margin_10"
+                                    android:textColor="@color/red"
+                                    android:textSize="@dimen/dp_14" />
+
+                            </LinearLayout>
+
+                            <com.kamaii.rider.utils.CustomTextViewBold
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/hrs_progressbar"
+                                android:paddingLeft="@dimen/margin_10"
+                                android:paddingTop="@dimen/dimen_5dp"
+                                android:paddingRight="@dimen/margin_10"
+
+                                android:text="0 Hour"
+                                android:textColor="@color/dark_blue_color"
+                                android:textSize="@dimen/margin_10" />
+
+
+                            <com.kamaii.rider.utils.CustomTextViewBold
+                                android:id="@+id/endhours"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/hrs_progressbar"
+                                android:layout_alignParentRight="true"
+                                android:paddingLeft="@dimen/margin_10"
+                                android:paddingTop="@dimen/dimen_5dp"
+
+                                android:paddingRight="@dimen/margin_10"
+                                android:textColor="@color/dark_blue_color"
+                                android:textSize="@dimen/margin_10" />
+
+                            <RelativeLayout
+                                android:id="@+id/progress_relative"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/endhours"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginTop="@dimen/margin_10"
+                                android:background="@drawable/intencive_green_eligible_bg"
+                                android:padding="@dimen/dimen_5dp">
+
+                                <com.kamaii.rider.utils.CustomTextViewBold
+                                    android:id="@+id/progress_eligible_txt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_toLeftOf="@+id/today_eligible_amount_digit"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:textColor="@color/green"
+                                    android:textSize="@dimen/dp_14" />
+
+                                <com.kamaii.rider.utils.CustomTextViewBold
+                                    android:id="@+id/today_eligible_amount_digit"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:text="300.00"
+                                    android:textColor="@color/green"
+                                    android:textSize="@dimen/text_16" />
+
+
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/seventh_linear2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/margin_10"
+                    android:paddingTop="@dimen/margin_10"
+                    android:paddingRight="@dimen/margin_10"
+                    android:paddingBottom="@dimen/margin_10">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_button_white_curved"
+                        android:backgroundTint="@color/black"
+                        app:cardBackgroundColor="@color/black"
+                        app:cardCornerRadius="@dimen/margin_10"
+                        app:cardElevation="0.5dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="0.5dp"
+                            android:background="@drawable/custom_button_white_curved"
+                            android:paddingTop="@dimen/margin_10">
+
+                            <com.kamaii.rider.utils.CustomTextViewBold
+                                android:id="@+id/t_o_t_t"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/margin_10"
+                                android:text="@string/incentive_today_order_target_txt"
+                                android:textColor="@color/dark_blue_color"
+                                android:textSize="@dimen/dp_14" />
+
+                            <com.github.mikephil.charting.charts.BarChart
+                                android:id="@+id/chart123"
+                                android:layout_width="match_parent"
+                                android:layout_height="250dp"
+                                android:layout_below="@+id/t_o_t_t" />
+
+
+                            <RelativeLayout
+                                android:id="@+id/first_graph_relative"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/chart123"
+                                android:layout_marginTop="@dimen/margin_10"
+                                android:background="@drawable/intencive_green_eligible_bg"
+                                android:padding="@dimen/dimen_5dp">
+
+                                <com.kamaii.rider.utils.CustomTextViewBold
+                                    android:id="@+id/first_graph_eligible_txt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_toLeftOf="@+id/chart1_amount_digit"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:textColor="@color/green"
+                                    android:textSize="@dimen/dp_14" />
+
+                                <com.kamaii.rider.utils.CustomTextViewBold
+                                    android:id="@+id/chart1_amount_digit"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:text="300.00"
+                                    android:textColor="@color/green"
+                                    android:textSize="@dimen/text_16" />
+
+
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/seventh_linear3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/margin_10"
+                    android:paddingTop="@dimen/margin_10"
+                    android:paddingRight="@dimen/margin_10"
+                    android:paddingBottom="@dimen/margin_10">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_button_white_curved"
+                        android:backgroundTint="@color/black"
+                        app:cardBackgroundColor="@color/black"
+                        app:cardCornerRadius="@dimen/margin_10"
+
+                        app:cardElevation="0.5dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="0.5dp"
+                            android:background="@drawable/custom_button_white_curved"
+                            android:paddingTop="@dimen/margin_10">
+
+                            <com.kamaii.rider.utils.CustomTextViewBold
+                                android:id="@+id/w_t_t"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/margin_10"
+                                android:text="@string/incentive_weekly_online_hrs_txt"
+                                android:textColor="@color/dark_blue_color"
+                                android:textSize="@dimen/dp_14" />
+
+                            <com.github.mikephil.charting.charts.BarChart
+                                android:id="@+id/chart456"
+                                android:layout_width="match_parent"
+                                android:layout_height="250dp"
+                                android:layout_below="@+id/w_t_t" />
+
+
+                            <RelativeLayout
+                                android:id="@+id/weekly_txt_relative"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/chart456"
+                                android:layout_marginTop="@dimen/margin_10"
+                                android:background="@drawable/intencive_green_eligible_bg"
+                                android:padding="@dimen/dimen_5dp">
+
+                                <com.kamaii.rider.utils.CustomTextViewBold
+                                    android:id="@+id/weekly_txt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_toLeftOf="@+id/chart2_amount_digit"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:textColor="@color/green"
+                                    android:textSize="@dimen/dp_14" />
+
+                                <com.kamaii.rider.utils.CustomTextViewBold
+                                    android:id="@+id/chart2_amount_digit"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:text="300.00"
+                                    android:textColor="@color/green"
+                                    android:textSize="@dimen/text_16" />
+
+
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/seventh_linear4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/margin_10"
+                    android:paddingTop="@dimen/margin_10"
+                    android:paddingRight="@dimen/margin_10"
+                    android:paddingBottom="@dimen/margin_10">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_button_white_curved"
+                        android:backgroundTint="@color/black"
+                        app:cardBackgroundColor="@color/black"
+                        app:cardCornerRadius="@dimen/margin_10">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="0.5dp"
+                            android:background="@drawable/custom_button_white_curved"
+                            android:paddingTop="@dimen/margin_10">
+
+                            <com.kamaii.rider.utils.CustomTextViewBold
+                                android:id="@+id/m_t_t"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/margin_10"
+                                android:text="@string/incentive_monthly_online_hrs_txt"
+                                android:textColor="@color/dark_blue_color"
+                                android:textSize="@dimen/dp_14" />
+
+                            <com.github.mikephil.charting.charts.BarChart
+                                android:id="@+id/chart789"
+                                android:layout_width="match_parent"
+                                android:layout_height="250dp"
+                                android:layout_below="@+id/m_t_t" />
+
+
+                            <RelativeLayout
+                                android:id="@+id/monthly_txt_relative"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/chart789"
+                                android:layout_marginTop="@dimen/margin_10"
+                                android:background="@drawable/intencive_green_eligible_bg"
+                                android:padding="@dimen/dimen_5dp">
+
+                                <com.kamaii.rider.utils.CustomTextViewBold
+                                    android:id="@+id/monthly_txt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_toLeftOf="@+id/chart3_amount_digit"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:textColor="@color/green"
+                                    android:textSize="@dimen/dp_14" />
+
+                                <com.kamaii.rider.utils.CustomTextViewBold
+                                    android:id="@+id/chart3_amount_digit"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:padding="@dimen/dimen_5dp"
+                                    android:text="300.00"
+                                    android:textColor="@color/green"
+                                    android:textSize="@dimen/text_16" />
+
+
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+</layout>

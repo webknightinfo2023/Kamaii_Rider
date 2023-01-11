@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dimen_5dp">
+
+    <ImageView
+        android:id="@+id/offline_recycle_radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_radio_btn_unselected"
+        android:layout_centerVertical="true"
+        />
+
+    <com.kamaii.rider.utils.CustomTextViewBold
+        android:id="@+id/offline_recycle_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/dimen_5dp"
+        android:layout_toRightOf="@+id/offline_recycle_radio"
+        android:hint="@string/confirmation_photo"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="16sp" />
+
+</RelativeLayout>

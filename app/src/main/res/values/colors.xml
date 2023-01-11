@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+<!--
+    <color name="colorPrimary">#0078FF</color>
+-->
+    <color name="colorPrimaryDark">#173143</color>
+<!--
+    <color name="colorPrimaryDark">#254987</color>
+-->
+    <color name="colorAccent">#000000</color>
+<!--
+    <color name="colorAccent">#0078FF</color>
+-->
+    <color name="otp_resend_color">#6836C5F0</color>
+    <color name="dark_blue_color">#173143</color>
+    <color name="amber_color">#ba6209 </color>
+    <color name="brown_color">#795548</color>
+    <color name="disable_btn_color">#40173143</color>
+    <color name="green_slide_color">#5eb701</color>
+    <color name="gray_view_address">#eeeef0</color>
+
+    <color name="gray_view">#f2f2f3</color>
+<!--
+    <color name="yellow_rider">#f3b004</color>
+-->
+<!--
+    <color name="yellow_rider">#EC8F20</color>
+-->
+    <color name="yellow_rider">#09429d</color>
+    <color name="edittext_gray">#9c9ca1</color>
+    <color name="pink_color">#e0215a</color>
+    <color name="off_white">#F1ECE4</color>
+    <color name="off_whitetwo">#F5F5F8</color>
+    <color name="BLUE_TXT">#1C4C5B</color>
+    <color name="incentive_txt_background">#E9FFF0</color>
+    <color name="forth_visitoe_color">#e1215a</color>
+    <color name="second_visitoe_color">#e14e22</color>
+    <color name="third_visitoe_color">#6a2ec1</color>
+    <color name="payment500_color_red">#F73F3F</color>
+    <color name="payment1000_color_red">#D40F0F</color>
+    <color name="light_pink_bg">#FEF6F8</color>
+    <color name="light_yellow_bg">#fffcf5</color>
+    <color name="light_red_bg">#FFF5F5</color>
+    <color name="incentive_null_txt_background">#FFE9EA</color>
+    <color name="incentive_red_txt_background">#BD9697</color>
+
+    <color name="customercolor">#4A18C5</color>
+    <color name="red_btn">#E02020</color>
+    <color name="lightgreen">#A8EBAF</color>
+    <color name="textcolor_dark">#173143</color>
+    <color name="lightgreenone">#E3F8E4</color>
+    <color name="windowBackground">#1C1C1C</color>
+    <color name="overlay">#AA1C1C1C</color>
+    <color name="divider">#333333</color>
+    <color name="hintcolor">#173143</color>
+    <color name="profile_background">#f2f2f3</color>
+    <color name="profile_texting">#173143</color>
+
+    <color name="light_gray">#DFDFDF</color>
+    <color name="search_back">#DFDFDF</color>
+    <color name="productback">#f9f8f8</color>
+    <color name="red_background">#fec2c2</color>
+    <color name="timercolor">#36c5f0</color>
+
+    <color name="status_bar_color">#FFFFFF</color>
+    <color name="off_gray">#DEDEDE</color>
+    <color name="red">#ff3647</color>
+    <color name="gray_wallet">#60969696</color>
+
+    <color name="black_off">#FF000000</color>
+    <color name="gray">#969696</color>
+    <color name="editback">#f1f1f1</color>
+    <color name="editketext">#383838</color>
+    <color name="green">#5EB701</color>
+    <color name="graph_green">#8BFEA3</color>
+    <color name="icon_color">#0681A6</color>
+    <color name="light_grey">#d3d3d3</color>
+    <color name="chat_out">#c4ccf8</color>
+    <color name="chat_in">#e0e3e6</color>
+    <color name="dark_red">#811700</color>
+    <color name="dark_blue">#5200D8</color>
+    <color name="reds">#FF2D00</color>
+    <color name="yellow">#CDC000</color>
+    <color name="rightbg">#ffaa68</color>
+    <color name="leftbg">#fe6e91</color>
+    <color name="color_next">#5E6B96</color>
+    <color name="approve">#33A4DA</color>
+    <color name="textcolor">#F5F5F5</color>
+    <color name="lightred">#FFDCDC</color>
+    <color name="lightredfour">#FC5B5B</color>
+    <color name="lightredfive">#FFB9B9</color>
+    <color name="colorGrey2">#5A5A5A</color>
+    <color name="lightgreenthree">#ddf2db</color>
+    <color name="lightgreenfour">#C0DDBE</color>
+    <color name="colorGrey">#CECECE</color>
+    <color name="blue_border_color">#2881E7</color>
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="light_blue">#F1FAFF</color>
+    <color name="light_purple">#1AABABAC</color>
+    <color name="dark_light_purple">#ababac</color>
+    <color name="purple">#ababac</color>
+    <color name="light_green_bg">#0A00FF00</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

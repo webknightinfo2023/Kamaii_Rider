@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/child_relative_first"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/share_profile_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10"
+            android:background="@drawable/white_curved_background">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/business_profile_image" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/share_services_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10"
+            android:layout_below="@+id/share_profile_linear"
+            android:background="@drawable/white_curved_background">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/share_services_image" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/birth_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/share_services_linear"
+            android:layout_margin="@dimen/margin_10"
+            android:background="@drawable/white_curved_background">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/birth" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/custom_button_white_curved"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:paddingTop="@dimen/dimen_5dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="@dimen/dimen_5dp">
+
+                <com.kamaii.rider.utils.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/share_profile"
+                    android:textAllCaps="true"
+                    android:textColor="#36C5F0"
+                    android:textSize="19dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/dimen_30dp"
+                android:layout_marginBottom="70dp"
+                android:background="@drawable/custom_button_white_curved"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:paddingTop="@dimen/dimen_5dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="@dimen/dimen_5dp">
+
+                <com.kamaii.rider.utils.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/share_services"
+                    android:textAllCaps="true"
+                    android:textColor="#36C5F0"
+                    android:textSize="19dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <com.kamaii.rider.utils.CustomTextViewBold
+        android:id="@+id/promotion_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/child_relative_first"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="-10dp"
+        android:text="Add Friend From Your Contact List"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/upload_contacts_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/promotion_txt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/promotion_contact" />
+
+        <com.kamaii.rider.utils.CustomTextViewBold
+            android:id="@+id/upload_contacts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_size_15"
+            android:text="UPLOAD CONTACT"
+            android:textColor="#36C5F0"
+            android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F4"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/action_bar_menus"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/llBack"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back"
+                android:textColor="@color/white"
+                android:tint="#173143" />
+
+        </LinearLayout>
+
+        <com.kamaii.rider.utils.CustomTextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Bank Documentation"
+            android:textColor="#173143"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+    <!--<LinearLayout
+        android:id="@+id/layselectcategory"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.kamaii.rider.utils.CustomTextView
+            android:textSize="11dp"
+            android:textColor="@color/black"
+            android:text="Select Category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </com.kamaii.rider.utils.CustomTextView>
+
+        <com.kamaii.rider.utils.CustomTextView
+            android:textColor="@color/dark_red"
+            android:text=" *"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </com.kamaii.rider.utils.CustomTextView>
+    </LinearLayout>
+
+    <com.kamaii.rider.utils.CustomTextViewBold
+        android:id="@+id/tvcat"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:drawableRight="@drawable/ic_drop_down"
+        android:gravity="center_vertical"
+        android:text="@string/all_categories"
+        android:textSize="16sp" />-->
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sub_relative"
+            android:layout_margin="@dimen/margin_10"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+
+                <LinearLayout
+                    android:id="@+id/layall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <com.kamaii.rider.utils.CustomTextViewBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="Bank Information"
+                        android:textSize="16sp">
+
+                    </com.kamaii.rider.utils.CustomTextViewBold>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:orientation="horizontal">
+
+                            <com.kamaii.rider.utils.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Bank Name"
+                                android:textColor="@color/black"
+                                android:textSize="11dp">
+
+                            </com.kamaii.rider.utils.CustomTextView>
+
+                            <com.kamaii.rider.utils.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="*"
+                                android:textColor="@color/dark_red"
+                                android:textSize="11dp">
+
+                            </com.kamaii.rider.utils.CustomTextView>
+
+                        </LinearLayout>
+
+                        <com.kamaii.rider.utils.CustomEditText
+                            android:id="@+id/etbankname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Enter Bank Name"
+                            android:inputType="text"
+                            android:singleLine="true"
+                            android:text="" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:orientation="horizontal">
+
+                            <com.kamaii.rider.utils.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Beneficiary Name"
+                                android:textColor="@color/black"
+                                android:textSize="11dp">
+
+                            </com.kamaii.rider.utils.CustomTextView>
+
+                            <com.kamaii.rider.utils.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="*"
+                                android:textColor="@color/dark_red"
+                                android:textSize="11dp">
+
+                            </com.kamaii.rider.utils.CustomTextView>
+
+                        </LinearLayout>
+
+                        <com.kamaii.rider.utils.CustomEditText
+                            android:id="@+id/etBenificiaryName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Enter Beneficiary Name"
+                            android:inputType="text"
+                            android:singleLine="true"
+                            android:text="" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:orientation="horizontal">
+
+                            <com.kamaii.rider.utils.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Account Number"
+                                android:textColor="@color/black"
+                                android:textSize="11dp">
+
+                            </com.kamaii.rider.utils.CustomTextView>
+
+                            <com.kamaii.rider.utils.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="*"
+                                android:textColor="@color/dark_red"
+                                android:textSize="11dp">
+
+                            </com.kamaii.rider.utils.CustomTextView>
+
+                        </LinearLayout>
+
+                        <com.kamaii.rider.utils.CustomEditText
+                            android:id="@+id/etaccoutno"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Enter Account Number"
+                            android:inputType="number"
+                            android:singleLine="true"
+                            android:text="" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:orientation="horizontal">
+
+                            <com.kamaii.rider.utils.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="IFSC Code"
+                                android:textColor="@color/black"
+                                android:textSize="11dp">
+
+                            </com.kamaii.rider.utils.CustomTextView>
+
+                            <com.kamaii.rider.utils.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="*"
+                                android:textColor="@color/dark_red"
+                                android:textSize="11dp">
+
+                            </com.kamaii.rider.utils.CustomTextView>
+
+                        </LinearLayout>
+
+
+                        <com.kamaii.rider.utils.CustomEditText
+                            android:id="@+id/etifsc_code"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Enter IFSC Code"
+                            android:inputType="text"
+                            android:singleLine="true"
+                            android:text="" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:orientation="horizontal">
+
+                            <com.kamaii.rider.utils.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Branch"
+                                android:textColor="@color/black"
+                                android:textSize="11dp">
+
+                            </com.kamaii.rider.utils.CustomTextView>
+
+                            <com.kamaii.rider.utils.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="*"
+                                android:textColor="@color/dark_red"
+                                android:textSize="11dp">
+
+                            </com.kamaii.rider.utils.CustomTextView>
+
+                        </LinearLayout>
+
+                        <com.kamaii.rider.utils.CustomEditText
+                            android:id="@+id/etbranchcode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Enter Branch"
+                            android:inputType="text"
+                            android:singleLine="true"
+                            android:text="" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="@dimen/margin_10"
+                            android:orientation="horizontal">
+
+                            <com.kamaii.rider.utils.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Cancel Cheque Copy"
+                                android:textColor="@color/black"
+                                android:textSize="11dp">
+
+                            </com.kamaii.rider.utils.CustomTextView>
+
+                            <com.kamaii.rider.utils.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="*"
+                                android:textColor="@color/dark_red"
+                                android:textSize="11dp">
+
+                            </com.kamaii.rider.utils.CustomTextView>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:elevation="5dp"
+                                app:cardBackgroundColor="#FFFFFF"
+                                app:cardCornerRadius="5dp"
+                                app:cardElevation="3dp">
+
+                                <ImageView
+                                    android:id="@+id/laycancelcheque"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="100dp"
+                                    android:layout_gravity="center"
+                                    android:adjustViewBounds="true"
+                                    android:background="@drawable/uploadfile"
+                                    android:orientation="vertical"
+                                    android:scaleType="fitXY">
+
+                                </ImageView>
+                            </androidx.cardview.widget.CardView>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.core.widget.NestedScrollView>
+
+    <Button
+
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="10dp"
+        android:background="@drawable/basicinfo_layout_submit_btn"
+        android:text="@string/submit"
+        android:textColor="@color/white">
+
+    </Button>
+
+
+</LinearLayout>

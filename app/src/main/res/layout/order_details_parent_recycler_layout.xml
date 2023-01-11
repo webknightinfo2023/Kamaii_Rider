@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gray_border_bg"
+        android:layout_marginBottom="@dimen/margin_10"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:paddingTop="@dimen/margin_10">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/order_details_parent_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.kamaii.rider.utils.CustomTextViewBold
+            android:id="@+id/view_source"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_10"
+            android:textSize="@dimen/text_size_16"
+            android:text="View route"
+            android:background="@color/gray_wallet"
+            android:textColor="@color/dark_blue_color"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/order_details_parent_rv"/>
+    </RelativeLayout>
+</layout>
